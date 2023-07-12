@@ -1,2 +1,10 @@
 class Tweet < ApplicationRecord
-end
+    # ...
+  
+    def profile_image
+      Faker::Avatar.image
+    end
+  
+    # ...
+  end
+  

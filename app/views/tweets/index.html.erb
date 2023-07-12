@@ -4,10 +4,19 @@
 
 <div id="tweets">
   <% @tweets.each do |tweet| %>
-    <%= render tweet %>
-    <p>
-      <%= link_to "Show this tweet", tweet %>
-    </p>
+    <div class="tweet">
+      <div class="user-info">
+        <div class="profile-image">
+          <%= image_tag tweet.profile_image, class: "rounded-circle", style: "width: 40px; height: 40px;" %>
+        </div>
+        <div class="user-details">
+          <p class="username"><%= tweet.username %></p>
+        </div>
+      </div>
+      <div class="tweet-content">
+        <p><%= tweet.description %></p>
+      </div>
+    </div>
   <% end %>
 </div>
 
@@ -19,5 +28,4 @@
 <%= link_to "New tweet", new_tweet_path %>
 
 <%= will_paginate @tweets %>
-
 
