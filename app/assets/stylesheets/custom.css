@@ -2,19 +2,86 @@
 
 /* Estilos específicos de Twitter */
 body {
-  background-color: #f5f8fa;
+  background-color: lightblue;
+  width: 100%;
+
 }
 
+header{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 15px;
+  background-color: white;
+  position: fixed;
+  z-index: 100;
+}
+
+header h1{
+  width: 30%;
+  color:#0c8de4;
+  font-size:40px;
+  margin:0;
+  padding: 0;
+}
+
+header .search {
+  width:70%;
+  display: flex;
+  justify-content: right;
+}
+
+header .search form{
+  display: flex;
+  border:solid 1px #c0c0c0;
+  border-radius: 12px;
+  -webkit-border-radius:12px;
+}
+
+header .search form .btn{
+  border:none;
+}
+
+header .search form .btn:hover{
+  border:none;
+  background-color: transparent;
+  color:#0c8de4;
+}
+
+
+.form-control{
+  background-color: transparent!important;
+  border: none!important;
+}
+
+.newt{
+  margin:0 30px;
+  align-items: center;
+  font-weight: bold;
+  display: flex!important;
+}
+
+
 .container {
-  max-width: 600px;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#tweets{
+  width:100%;
+  padding: 100px 10px 40px;
+
 }
 
 .tweet {
   background-color: #fff;
-  border: 1px solid #e6ecf0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   padding: 15px;
   margin-bottom: 20px;
+  border:none!important;
 }
 
 .tweet .tweet-content {
@@ -65,4 +132,28 @@ body {
 .btn-twitter:hover {
   background-color: #0c8de4;
   border-color: #0c8de4;
+}
+
+.mtweet{
+  width:100%;
+  padding: 0;
+  text-align: center;
+}
+.mtweet .btn{
+  font-size: 25px;
+}
+
+.compagina{
+  width:100%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  -webkit-border-radius:12px;
+  text-align: center;
+  margin:0 0 50px;
+  font-size: 27px;
+}
+
+.compagina a{
+  text-decoration: none;
 }

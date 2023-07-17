@@ -9,7 +9,7 @@
 
 require 'faker'
 
-10.times do
+20.times do
   Tweet.create(
     description: Faker::Lorem.sentence,
     username: Faker::Internet.username
